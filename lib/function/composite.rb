@@ -1,6 +1,6 @@
 module Function
   module Composite
-    VERSION = "0.1.0"
+    VERSION = "0.1.1"
 
     refine(Symbol) do
       def call(*args, &block)
