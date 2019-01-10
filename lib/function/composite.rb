@@ -25,5 +25,15 @@ module Function
         super(other.to_proc)
       end
     end
+
+    refine(Method) do
+      def <<(other)
+        super(other.to_proc)
+      end
+
+      def >>(other)
+        super(other.to_proc)
+      end
+    end
   end
 end
